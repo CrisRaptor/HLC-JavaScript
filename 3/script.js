@@ -1,9 +1,9 @@
 window.onload = () =>{
-    document.querySelector(".btn1").addEventListener("click",getGenres());
-    document.querySelector(".btn2").addEventListener("click",getGenres());
-    document.querySelector(".btn3").addEventListener("click",getGenres());
-    document.querySelector(".btn4").addEventListener("click",getGenres());
-    document.querySelector(".btn5").addEventListener("click",getGenres());
+    document.querySelector(".btn1").addEventListener("click",getGenres);
+    document.querySelector(".btn2").addEventListener("click",getGenres);
+    document.querySelector(".btn3").addEventListener("click",getGenres);
+    document.querySelector(".btn4").addEventListener("click",getGenres);
+    document.querySelector(".btn5").addEventListener("click",getGenres);
 }
 
 //Starting HTML for table
@@ -49,6 +49,7 @@ books.forEach(e => {
 
 
 const getGenres = ()=>{
+    results.innerHTML = "";
     let genres = new Set("");
     let cont = 0;
     books.forEach(e => {
