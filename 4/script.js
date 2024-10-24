@@ -29,5 +29,9 @@ form.forEach(element => {
 //Alternative -> form2 = document.querySelector("form[name="search"]"); form.classList.add("bg-secondary","text-light");
 
 //e, The first input in that form.
+let input = form[0].querySelector("input");
+input.classList.add("bg-success");
 
 //f, The last input in that form.
+let lastInput = form[0].querySelectorAll("input")[form[0].querySelectorAll("input").length-1];
+lastInput.classList.add("bg-info")
